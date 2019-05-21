@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Smart Sight</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.min.css">
+    <link rel="stylesheet" href="assets/css/magnificpopup.css">
+    <link rel="stylesheet" href="assets/css/jquery.mb.YTPlayer.min.css">
+    <link rel="stylesheet" href="assets/css/typography.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+    <link rel="shortcut icon" type="image/png" href="assets/img/icon/favicon1.png">
+
+    <style>
+        .f-flex {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin: 2rem 0;
+            width: 100%;
+        }
+
+        .f-flex1 {
+
+
+            margin: 10px;
+            height: auto;
+            width: 100%;
+            -webkit-transform: none;
+            -ms-transform: none;
+            transform: none;
+            -webkit-transition: all 400ms ease;
+            transition: all 400ms ease;
+            color: #000;
+            border: 1px solid lightgray;
+            padding: 20px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+            border-radius: 5px;
+        }
+
+        .f-flex1:hover {
+            box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, .15);
+            text-decoration: none;
+        }
+
+        .f-flex1:nth-child(2n-1) {
+            justify-self: end;
+        }
+
+        .f-flex1:nth-child(2n) {
+            justify-self: start;
+        }
+
+        .f-f1 {
+            height: 60%;
+            border-bottom: 1px solid grey;
+        }
+
+        .f-flex1 h2 {
+            margin-bottom: 20px;
+        }
+
+        .f-f1 {
+            background-image: url(assets/img/icon/back2.jpg);
+            background-size: cover;
+        }
+
+        .f-f2 {
+            position: relative;
+            z-index: 100;
+            display: block;
+            width: 80%;
+            margin-top: -100px;
+            margin-right: auto;
+            margin-left: auto;
+            padding: 40px;
+            background-color: #fff;
+        }
+
+        .f-f2 h2 {
+            white-space: nowrap;
+
+        }
+
+        .button.big:hover {
+            color: white !important;
+            background-color: #304269 !important;
+            opacity: 0.8;
+        }
+
+        .contact-h1 {
+            line-height: 60px;
+            color: #304269;
+        }
+
+        .service-area {
+            height: 100vh;
+            margin-top: 72px;
+            padding: 25px 40px;
+        }
+
+        @media(max-width: 1200px) {
+            .f-flex1 {
+                width: 100%;
+            }
+
+            .f-flex {
+                grid-template-columns: 1fr;
+            }
+
+            .f-flex1:nth-child(2n-1),
+            .f-flex1:nth-child(2n) {
+                justify-self: center;
+            }
+
+        }
+        .table .thead-dark th {
+    color: #fff;
+    background-color: #212529;
+    border-color: #32383e;
+}
+.low, .medium, .none, .high{
+    position: relative;
+}
+.low::after, .medium::after, .high:after{
+    content: '';
+    width: 20%;
+    background: #ff000030;
+    height: 100%;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    
+}
+.medium::after{
+    width: 50%;
+    background: rgba(38, 0, 255, 0.31);
+}
+.l-box{
+    background: #ff000030;
+}
+.m-box{
+    background: rgba(38, 0, 255, 0.31);
+
+}
+.h-box{
+    background: rgba(0, 188, 212, 0.25098039215686274);
+
+}
+
+.high:after{
+    width: 80%;
+    background: rgba(0, 188, 212, 0.25098039215686274);
+
+}
+table{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+        /* thead tr td:nth-child(2n) {
+            background: rgb(250, 89, 116);
+            color: white;
+        }
+
+        thead tr td:nth-child(2n+1) {
+            background: blue;
+            color: white;
+        }
+
+        tbody tr:first-child td:nth-child(2n+1) {
+            background: rgb(250, 89, 116);
+            color: white;
+        }
+
+        tbody tr:first-child td:nth-child(2n) {
+            background: blue;
+            color: white;
+        }
+
+        tbody tr:nth-child(2) td:nth-child(2n+1) {
+            background: white;
+            color: black;
+        }
+
+        tbody tr:nth-child(2) td:nth-child(2n) {
+            background: rgb(250, 89, 116);
+            color: white;
+        }
+        tbody tr:nth-child(3) td:nth-child(2n+1) {
+            background: blue;
+            color: white;
+        }
+
+        tbody tr:nth-child(3) td:nth-child(2n) {
+            background: white;
+            color: black;
+        }
+        tbody tr:nth-child(4) td:nth-child(2n+1) {
+        
+            background: rgb(250, 89, 116);
+            color: white;
+        }
+
+        tbody tr:nth-child(4) td:nth-child(2n) {
+         background: blue;
+         color: white;
+        }
+        tbody tr:nth-child(5) td:nth-child(2n+1) {
+        
+            background: blue;
+     color: white;
+    }
+
+    tbody tr:nth-child(5) td:nth-child(2n) {
+        background: rgb(250, 89, 116);
+            color: white;
+    }
+    .no-back{
+        background: white!important;
+        color: black!important;
+    } */
+    .d-flex div{
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+    .d-flex span{
+        width: 10px;
+        height: 10px;
+        
+        margin-right: 5px;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+
+    <header id="header">
+        <div class="header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="menu-area">
+                        <div class="col-md-3 col-sm-12 col-xs-12">
+                            <div class="logo">
+                                <a href="index.html"><img src="assets/img/icon/logowhite.png" alt="Smart Sight"></a>
+                            </div>
+                        </div>
+                        <div class="col-md-9 hidden-xs hidden-sm">
+                            <div class="main-menu">
+                                <nav class="nav-menu">
+                                    <ul>
+                                        <li class=""><a href="#home"></a></li>
+                                        <!-- <li><a href="#services">Solutions</a></li>
+                    <li><a href="#screenshot">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#contact-sec">Contact</a></li>
+                    <!-- <li><a href="#blog">Blog</a></li> -->
+                                        <!-- <li><a href="">Blog</a></li> -->
+
+
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+                            <div class="mobile_menu"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="service-area">
+        <!-- <h1>Real Time Table</h1>
+        <div>
+            <table class="table table-bordered color-table" style=" width: 60%;">
+                <thead>
+                    <tr>
+                        <td>T1</td>
+                        <td>T2</td>
+                        <td class="no-back">T3</td>
+                        <td>T4</td>
+                        <td>T5</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>T11</td>
+                        <td>T12</td>
+                        <td>T13</td>
+                        <td>T14</td>
+                        <td>T15</td>
+                    </tr>
+                    <tr>
+                        <td>T21</td>
+                        <td>T22</td>
+                        <td>T23</td>
+                        <td>T24</td>
+                        <td class="no-back">T25</td>
+                    </tr>
+                    <tr>
+                        <td>T31</td>
+                        <td>T32</td>
+                        <td>T33</td>
+                        <td>T34</td>
+                        <td>T35</td>
+                    </tr>
+                    <tr>
+                        <td class="no-back">T41</td>
+                        <td>T42</td>
+                        <td>T43</td>
+                        <td>T44</td>
+                        <td>T45</td>
+                    </tr>
+                    <tr>
+                            <td>T51</td>
+                            <td>T52</td>
+                            <td>T53</td>
+                            <td class="no-back">T54</td>
+                            <td>T65</td>
+                        </tr>
+                </tbody>
+            </table>
+        </div> -->
+        <h1>Real Time Queue</h1>
+         <div>
+            <table class="table table-bordered color-table" style=" width: 80%;">
+                <thead class="thead-dark">
+                    <tr>
+                   
+                    <th>Stall</th>
+                    <th>Status</th>
+                </tr>
+
+                </thead>
+                <tbody>
+                   <tr>
+                     
+                       <td>Chinese</td>
+                       <td class="low">Low</td>
+                   </tr>
+                   <tr>
+                      
+                        <td>North Indian</td>
+                        <td class="low">Low</td>
+                    </tr>
+                    <tr>
+                          
+                            <td>South Indian</td>
+                            <td class="medium">Medium</td>
+                        </tr>
+                        <tr>
+                              
+                                <td>Continental</td>
+                                <td class="medium">Medium</td>
+                            </tr>
+                            <tr>
+                                  
+                                    <td>Biryani</td>
+                                    <td class="high">High</td>
+                                </tr>
+                                <tr>
+                                       
+                                        <td>Tiffins</td>
+                                        <td class="none">None</td>
+                                    </tr>
+
+                  
+                </tbody>
+            </table>
+            <div class="d-flex">
+                <div>
+                    
+                        <span class="l-box"></span>
+                        <p>Low</p>
+                   
+                </div>
+                <div >
+                        <span class="m-box"></span>
+                        <p>Medium</p>
+                </div>
+                <div>
+                        <span class="h-box"></span>
+                        <p>High</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <footer>
+        <div class="footer-area">
+            <div class="container">
+                <p>
+                    Copyright &copy;
+                    <script data-cfasync="false" src=""></script>
+                    <script>document.write(new Date().getFullYear() - 1);</script> All rights reserved | <a
+                        class="f-color" style="color: white; font-size: 14px;">Smart Sight</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="assets/js/jquery-3.2.0.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/contact.js"> </script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slicknav.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/magnific-popup.min.js"></script>
+    <script src="assets/js/counterup.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+
+
+</body>
+
+</html>

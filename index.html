@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Smart Sight</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/slicknav.min.css">
+  <link rel="stylesheet" href="assets/css/magnificpopup.css">
+  <link rel="stylesheet" href="assets/css/jquery.mb.YTPlayer.min.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css" />
+
+  <link rel="shortcut icon" type="image/png" href="assets/img/icon/favicon1.png">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+        var options = {
+            whatsapp: "+91 9133100036", // WhatsApp number
+            company_logo_url: "//static.whatshelp.io/img/flag.png", // URL of company logo (png, jpg, gif)
+            greeting_message: "Hello, how may we help you? Just send us a message now to get assistance.", // Text of greeting message
+            call_to_action: "Chat with me", // Call to action
+            position: "left", // Position may be 'right' or 'left'
+        };
+        var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+        var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+        s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+        var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+    })();
+</script>
+
+  <style>
+    .f-flex {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 2rem 0;
+      width: 100%;
+    }
+
+    .f-flex1 {
+
+
+      margin: 10px;
+      height: auto;
+      width: 100%;
+      -webkit-transform: none;
+      -ms-transform: none;
+      transform: none;
+      -webkit-transition: all 400ms ease;
+      transition: all 400ms ease;
+      color: #000;
+      border: 1px solid lightgray;
+      padding: 20px;
+      box-shadow: 0 0 8px rgba(0, 0, 0, .1);
+      border-radius: 5px;
+    }
+
+    .f-flex1:hover {
+      box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, .15);
+      text-decoration: none;
+    }
+
+    .f-flex1:nth-child(2n-1) {
+      justify-self: end;
+    }
+
+    .f-flex1:nth-child(2n) {
+      justify-self: start;
+    }
+
+    .f-f1 {
+      height: 60%;
+      border-bottom: 1px solid grey;
+    }
+
+    .f-flex1 h2 {
+      margin-bottom: 20px;
+    }
+
+    .f-f1 {
+      background-image: url(assets/img/icon/back2.jpg);
+      background-size: cover;
+    }
+
+    .f-f2 {
+      position: relative;
+      z-index: 100;
+      display: block;
+      width: 80%;
+      margin-top: -100px;
+      margin-right: auto;
+      margin-left: auto;
+      padding: 40px;
+      background-color: #fff;
+    }
+    
+    .f-f2 h2 {
+      white-space: nowrap;
+
+    }
+
+    .button.big:hover {
+      color: white !important;
+      background-color: #304269 !important;
+      opacity: 0.8;
+    }
+
+    .contact-h1 {
+      line-height: 60px;
+      color: #304269;
+    }
+
+    .fa-chevron-right, .fa-chevron-down{
+      color: #304269
+    }
+
+    .collapsible {
+      border-top: 2px solid #304269;
+      border-right: 2px solid #304269;
+      border-left: 2px solid #304269;
+      margin: .5rem 0 1rem 0;
+      width: 50%;
+      border-radius: 10px;
+      
+
+    }
+    .co-one{
+      margin-right: 2.5rem;
+    }
+    .collapsible-header {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      cursor: pointer;
+      -webkit-tap-highlight-color: transparent;
+      line-height: 1.5;
+      padding: 1rem;
+      background-color: #fff;
+      border-bottom: 2px solid #304269;
+     
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .collapsible-body {
+      display: none;
+      border-bottom: 2px solid #304269;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 2rem;
+      border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: rgb(247, 252, 255);
+    }
+    .explore li{
+      margin-bottom: 1rem;
+    }
+    .contact-area h4{
+      color: #304269;
+    }
+    .header-area{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+    }
+    .header-2{
+      padding-right: 2rem;
+      cursor: pointer;
+
+    }
+    .header-2 .fa{
+      font-size: 25px;
+      color: white;
+      
+    }
+    .header-2:hover .fa{
+      color: #304269 
+    }
+    @media(max-width: 1200px) {
+      .f-flex1 {
+        width: 100%;
+      }
+
+      .f-flex {
+        grid-template-columns: 1fr;
+      }
+
+      .f-flex1:nth-child(2n-1),
+      .f-flex1:nth-child(2n) {
+        justify-self: center;
+      }
+
+    }
+    @media(max-width: 911px){
+      .m-col{
+        flex-direction: column!important;
+        height:auto!important;
+      }
+      .collapsible{
+        width: 100%;
+    
+      }
+      .co-one{
+      margin-right: 0rem;
+    }
+    }
+
+
+
+    #contact{
+    padding:10px 0 10px;
+  }
+
+  .contact-text{
+    margin:45px auto;
+  }
+
+  .mail-message-area{
+    width:100%;
+    padding:0 15px;
+  }
+
+  .mail-message{
+    width: 100%;
+    background:rgba(255,255,255, 0.8) !important;
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    transition: all 0.7s;
+    margin:0 auto;
+    border-radius: 0;
+  }
+
+  .not-visible-message{
+    height:0px;
+    opacity: 0;
+  }
+
+  .visible-message{
+    height:auto;
+    opacity: 1;
+    margin:25px auto 0;
+  }
+ 
+.dropdown-menu p{
+  cursor: pointer;
+}
+  </style>
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="spinner"></div>
+  </div>
+
+
+  <header id="header">
+    <div class="header-area ">
+      <div class="container">
+        <div class="row">
+          <div class="menu-area">
+            <div class="col-md-3 col-sm-12 col-xs-12">
+              <div class="logo">
+                <a href="index.html"><img src="assets/img/icon/logowhite.png" alt="Smart Sight"></a>
+              </div>
+            </div>
+            <div class="col-md-9 hidden-xs hidden-sm">
+              <div class="main-menu">
+                <nav class="nav-menu">
+                  <ul>
+                    <li class="active"><a href="#home">Home</a></li>
+                    <li><a href="#services">Solutions</a></li>
+                    <li><a href="#screenshot">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                   
+                    <li><a href="#contact-sec">Explore</a></li>
+                    <li style="cursor: pointer"> <div class="dropdown">
+                      
+                        <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >More <span class="caret"></span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu1" style="padding: 10px">
+                          <div>
+                          <p href="#">Support </p>
+                         <p href="#faq">FAQ's</p>
+                          <p href="#">Chat</p>
+                        </div>
+                        </div>
+                      </div></li>
+
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xs-12 visible-sm visible-xs">
+              <div class="mobile_menu"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-2" type="button" data-toggle="modal" data-target="#myModal" title="contact">
+      
+              <i class="fa fa-envelope" ></i>
+      
+       </div>
+    </div>
+  </header>
+
+
+  <section class="slider-area" id="home">
+
+    <div class="" style="width: 100%">
+      <div class="item item1">
+        <div id="particle-canvas" style="z-index: 1"></div>
+        <div class="f-row f-1" style="position: absolute; z-index: 21">
+          <h1>Configurable AI for computer vision</h1>
+        </div>
+      </div>
+      <!-- <div class="item item2">
+        <div class="f-row f-1">
+          <h1>Smart Sight Appliances ANPR</h1>
+        </div>
+      </div>
+      <div class="item item3">
+        <div class="f-row f-1">
+          <h1>Smart Sight
+
+              Camera for Vehicle Detection</h1>
+        </div>
+      </div> -->
+    </div>
+
+  </section>
+
+
+  <div class="service-area" id="service1">
+    <div class="container">
+      <div class="row f-row j-center">
+        <div class="col-md-4 col-sm-4 col-xs-12 col-6">
+          <div class="service-single">
+            <img src="assets/img/icon/icon4.png" alt="service image">
+            <h2>Smart Sight</h2>
+            <!-- <ul>
+              <li>PARKING LOT
+                MANAGEMENT</li>
+              <li>HUMAN
+                BEHAVIOURAL
+                ANALYSIS</li>
+              <li>AUTOMATIC
+
+                VEHICLE
+                VERIFICATIONS</li>
+
+
+            </ul> -->
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4 col-xs-12 col-6">
+          <div class="service-single">
+            <img src="assets/img/icon/icon3.png" alt="service image">
+            <h2>Smart Sight API</h2>
+            <!-- <ul>
+              <li>OCR</li>
+              <li>ANPR</li>
+<li>Data Sets</li>
+              <li>CAR IMAGE Analysis</li>
+
+
+            </ul> -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <section class="feature-area  ptb--100" id="services">
+    <div class="container">
+      <div class="section-title">
+        <h2>Solutions</h2>
+
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="ft-content rtl">
+            <div class="ft-single">
+              <img src="assets/img/icon/ai1.png" alt="icon">
+              <div class="meta-content">
+                <h2>Smart Sight Appliances</h2>
+                <p>SMART CAMERA with AI
+                  CHIP</p>
+              </div>
+            </div>
+            <div class="ft-single">
+              <img src="assets/img/icon/ai2.png" alt="icon">
+              <div class="meta-content">
+                <h2>Customizable Visual Appliances</h2>
+                <ul>
+                  <li>Video analysis</li>
+                </ul>
+                <p>Training industry specific objects such as car, </p>
+              </div>
+            </div>
+            <div class="ft-single">
+              <img src="assets/img/icon/ai3.png" alt="icon">
+              <div class="meta-content">
+                <h2>Smart Sight Camera Api</h2>
+                <p>Integrate with our ANPR API in a few lines of code and get an easy to use JSON response with the
+                  number plate value of the vehicle.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 hidden-sm col-xs-12">
+          <div class="ft-screen-img">
+            <img src="assets/img/mobile/cam1.webp" alt="image">
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="ft-content">
+            <div class="ft-single">
+              <img src="assets/img/icon/ai8.png" alt="icon">
+              <div class="meta-content">
+                <h2>Smart surveillance</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+              </div>
+            </div>
+            <div class="ft-single">
+              <img src="assets/img/icon/ai9.png" alt="icon">
+              <div class="meta-content">
+                <h2>Cognitive Insights</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+              </div>
+            </div>
+            <div class="ft-single">
+              <img src="assets/img/icon/ai7.png" alt="icon">
+              <div class="meta-content">
+                <h2>Merchandising Analytics</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, iumod tempor incididunt</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="about-area ptb--100 bg-gray " id="screenshot">
+    <div class="container">
+      <div class="section-title">
+        <h2>About Smart Sight</h2>
+        <p>OUR VISION </p>
+      </div>
+      <div class="row d-flex flex-center">
+        <div class="col-md-6 col-sm-6 hidden-xs">
+          <div class="about-left-img">
+            <img src="assets/img/about/abt-left-img1.webp" alt="image">
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 d-flex flex-center">
+          <div class="about-content">
+            <p>SmartSight is a simplified next generation system & solution ready service suite focused on
+              computer vision for enhancing infrastructure,security surveillance,monitoring analytics and
+              recording experience metrics of various environments. SmartSight’s service suite is already
+              adapted & validated by many international key players and IT giants.
+
+            </p>
+            <p>Every CCTV installed facility or prospected infrastructure is compatible and eligible to avail
+              whole range of SmartSight solutions.
+              Feel free to contact us for understanding the WHAT,HOW and WHEN responses of SmartSight Services.
+              <span> <a href="#">....read more</a></span> </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="testimonial-area ptb--100" id="team">
+    <div class="container">
+      <div class="section-title">
+        <h2>Team</h2>
+
+      </div>
+      <div class="f-row ">
+        <div class="single-tst mar-right">
+          <img src="assets/img/team/1.png" alt="author" class="ben-img">
+          <h4>VAMSHI KRISHNA TADIGOTLA</h4>
+          <span>Founder</span>
+          <p>B. Tech and M. Tech from IIT Delhi.Managing Director and Founder of ColosseumTech Solutions Private
+            Limited.More than 10 Years of experience in Software development and
+            operations and some of his strengths in fields like Logistics industry, Supply Chain Management, DevOps</p>
+          <ul class="tst-social mar-top">
+            <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+            <li><a href="https://www.linkedin.com/in/vamshi-krishna-532b623/" target="_blank"><i
+                  class="fa fa-linkedin"></i></a></li>
+
+          </ul>
+        </div>
+        <div class="single-tst">
+          <img src="assets/img/team/3-min.webp" alt="author" class="ben-img">
+          <h4>BENDANG IMCHEN</h4>
+          <span>Founder</span>
+          <p>B. Tech and M. Tech from IIT Delhi. Director and Co-founder of ColosseumTech Solutions Private Limited.
+            Founder of Elysium Enterprise, Nagaland. More than 10 Years of experience in Software development and
+            operations and some of his strengths in fields like eGovernance, Law Enforcement, UI Development, Branding
+          </p>
+          <ul class="tst-social">
+            <!-- <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitter"></i></a></li> -->
+            <li><a><i class="fa fa-linkedin"></i></a></li>
+
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-gray ptb--100" id="faq">
+    <div class="container">
+      <div class="section-title">
+          <h2>FAQ'S</h2>
+  
+        </div> 
+   <div class="f-row m-col" style="    justify-content: space-between;
+   height: 10em;">
+ 
+        <ul class="collapsible co-one" >
+            <li>
+              <div class="collapsible-header" style="border-top-left-radius: 10px; border-top-right-radius: 10px">
+                <p>What can Smart Sight Ai do for your intelligent applications? </p>
+                <i class="fa fa-chevron-right"></i>
+              </div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <li>
+              <div class="collapsible-header" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px"> 
+                <p>What is the fixed cost for Smart Sight services installation?</p>
+                <i class="fa fa-chevron-right"></i></div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li>
+            <!-- <li>
+              <div class="collapsible-header"> <p>What can Smart Sight Ai do for your intelligent applications? </p>
+                <i class="fa fa-chevron-right"></i></div>
+              <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+            </li> -->
+          </ul>
+
+    
+ 
+      <ul class="collapsible" >
+          <li>
+            <div class="collapsible-header" style="border-top-left-radius: 10px; border-top-right-radius: 10px">
+              <p>Does SmartSight covers both hardware and software installation?</p>
+              <i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <li>
+            <div class="collapsible-header" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px"> 
+              <p>What is the variable/Subscription cost for Smart Sight services? </p>
+              <i class="fa fa-chevron-right"></i></div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li>
+          <!-- <li>
+            <div class="collapsible-header"> <p>What can Smart Sight Ai do for your intelligent applications? </p>
+              <i class="fa fa-chevron-right"></i></div>
+            <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+          </li> -->
+        </ul>
+
+
+
+    </div>
+  </div>
+  </section>
+
+
+  <section class="contact-area ptb--100" id="contact-sec">
+    <div class="container">
+      <div class="section-title">
+        <h2>Explore SmartSight Verticles</h2>
+
+      </div>
+      <div class="row">
+       
+        <div class="col-md-4 col-sm-4 col-xs-12">
+            <h4 class="" style="margin-bottom: 2rem">SmartSight For</h4>
+            <div >
+                <ul class="explore">
+                  <li>Attendance Management</li>
+                  <li>Time management</li>
+                  <li>Smart Surveillance</li>
+                  <li>Que Management</li>
+                  <li>Object Tracking</li>
+                  <li>Gesture Identification</li>
+                  <li>Cognitive Insights</li>
+                  <li>
+                      Case Study with SmartSight
+                  </li>
+                  <li>Inference solutions with SmartSight</li>
+                </ul>
+              </div>
+    
+        </div>
+        <div class="col-md-5 col-sm-5 col-xs-12">
+           
+            <div class="">
+                <img src="assets/img/icon/logo1.png" width="200" style="margin-bottom: 2rem">
+              <div class="s-info">
+                <i class="fa fa-map-marker"></i>
+                <div class="meta-content">
+  
+                  <span>Plot # 682, 5th Floor, Babukhan Rasheed Plaza, </span>
+                  <span>Road No 36 500033, Aditya Enclave, Venkatagiri, Jubilee Hills, Hyderabad, Telangana 500033</span>
+                </div>
+              </div>
+                <div class="s-info">
+                    <i class="fa fa-mobile"></i>
+                    <div class="meta-content">
+                      <span>+91 9133100036</span>
+                      <!-- <span>+91 9133100036</span> -->
+                    </div>
+                  </div>
+                  <div class="s-info">
+                    <i class="fa fa-paper-plane"></i>
+                    <div class="meta-content">
+                      <span><a href="mailto:sales@smartsight.ai" class="" data-cfemail="">sales@smartsight.ai</a></span>
+      
+                    </div>
+                  </div>
+                  <div class="c-social">
+                      <ul>
+                        <li><a href="https://www.linkedin.com/company/smartsight-ai/" target="_blank" title="linkedin"><i
+                              class="fa fa-linkedin"></i></a></li>
+                              <li><a href="#" target="_blank" title="facebook"><i
+                                class="fa fa-facebook"></i></a></li>
+                                <li><a href="#" target="_blank"  title="twitter"><i
+                                  class="fa fa-twitter"></i></a></li>
+                                  <li><a href="#" target="_blank" title="quora"><i
+                                    class="fa fa-quora"></i></a></li>
+        
+                      </ul>
+                    </div>
+            
+             
+            
+            </div>
+            
+          </div>
+
+          <div  class="col-md-3 col-sm-3 col-xs-12 text-right">
+              <h4 class="" style="margin-bottom: 2rem">Explore</h4>
+              <div>
+                  <ul class="explore">
+                    <li>For smart cities</li>
+                    <li>For buildings</li>
+                    <li>For vehicles</li>
+                    <li>For events</li>
+                    <li>For security</li>
+                    <li>For retail stores</li>
+                    <li>For warehouses</li>
+                    <li>
+                        For hotels
+                    </li>
+                   
+                  </ul>
+                </div>
+           
+          </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer-area">
+      <div class="container">
+        <p>
+          Copyright &copy;
+          <script data-cfasync="false" src=""></script>
+          <script>document.write(new Date().getFullYear() - 1);</script> All rights reserved | <a class="f-color"
+            style="color: white; font-size: 14px;">Smart Sight</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title">Contact Us</h4>
+          </div>
+          <div class="modal-body">
+              <div class="inner contact">
+                  <!-- Form Area -->
+                  <div class="contact-form">
+                      <!-- Form -->
+                      <form id="contact-us" method="post" action="#">
+                          <!-- Left Inputs -->
+                          <div class="col-xs-6 wow animated slideInLeft" data-wow-delay=".5s">
+                              <!-- Name -->
+                              <input type="text" name="name" id="name" required="required" class="form" placeholder="Your Name" />
+                              <!-- Email -->
+                              <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Your Email" />
+                              <input type="numnber" name="phone" id="phone" required="required" class="form" placeholder="Your Phone" />
+                              <!-- Subject -->
+                              <!-- <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" /> -->
+                              <select name="subject" id="subject" required="required" class="form-control" placeholder="Subject" >
+                                  <option selected value="-1"> Select the subject</option>
+                                  <option>Attendence Management</option>
+                                  <option>Time management</option>
+                                  <option>Smart Surveillance</option>
+                                  <option>Que Management</option>
+                                  <option>Object Tracking</option>
+                                  <option>Gesture Identification</option>
+                                  <option>Inference solutions with SmartSight</option>
+                              </select>
+                          </div><!-- End Left Inputs -->
+                          <!-- Right Inputs -->
+                          <div class="col-xs-6 wow animated slideInRight" data-wow-delay=".5s">
+                              <!-- Message -->
+                              <textarea name="message" id="message" class="form textarea"  placeholder="Your Message"></textarea>
+                          </div><!-- End Right Inputs -->
+                          <!-- Bottom Submit -->
+                       
+                          <!-- Clear -->
+                          <div class="clear"></div>
+                      </form>
+  
+                      <!-- Your Mail Message -->
+                      <div class="mail-message-area">
+                          <!-- Message -->
+                          <div class="alert gray-bg mail-message not-visible-message">
+                              <strong>Thank You !</strong> Your email has been delivered.
+                          </div>
+                      </div>
+  
+                  </div><!-- End Contact Form Area -->
+              </div><!-- End Inner -->
+          </div>
+          <div class="modal-footer">
+              <div class="relative fullwidth col-xs-12">
+                  <!-- Send Button -->
+                  <button type="submit" id="submit" name="submit" class="btn btn-success">Send Message</button> 
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Cancel</button>
+              </div><!-- End Bottom Submit -->
+           
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  <script src="assets/js/jquery-3.2.0.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/contact.js"> </script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.slicknav.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/magnific-popup.min.js"></script>
+  <script src="assets/js/counterup.js"></script>
+  <script src="assets/js/jquery.waypoints.min.js"></script>
+  <script src="assets/js/jquery.mb.YTPlayer.min.js"></script>
+  <script src="assets/js/theme.js"></script>
+
+
+
+</body>
+<script>
+    ! function (a) {
+      var b = "object" == typeof self && self.self === self && self || "object" == typeof global && global.global === global && global;
+      "function" == typeof define && define.amd ? define(["exports"], function (c) {
+        b.ParticleNetwork = a(b, c)
+      }) : "object" == typeof module && module.exports ? module.exports = a(b, {}) : b.ParticleNetwork = a(b, {})
+    }(function (a, b) {
+      var c = function (a) {
+        this.canvas = a.canvas, this.g = a.g, this.particleColor = a.options.particleColor, this.x = Math.random() * this.canvas.width, this.y = Math.random() * this.canvas.height, this.velocity = {
+          x: (Math.random() - .5) * a.options.velocity,
+          y: (Math.random() - .5) * a.options.velocity
+        }
+      };
+      return c.prototype.update = function () {
+        (this.x > this.canvas.width + 20 || this.x < -20) && (this.velocity.x = -this.velocity.x), (this.y > this.canvas.height + 20 || this.y < -20) && (this.velocity.y = -this.velocity.y), this.x += this.velocity.x, this.y += this.velocity.y
+      }, c.prototype.h = function () {
+        this.g.beginPath(), this.g.fillStyle = this.particleColor, this.g.globalAlpha = .7, this.g.arc(this.x, this.y, 1.5, 0, 2 * Math.PI), this.g.fill()
+      }, b = function (a, b) {
+        this.i = a, this.i.size = {
+          width: this.i.offsetWidth,
+          height: this.i.offsetHeight
+        }, b = void 0 !== b ? b : {}, this.options = {
+          particleColor: void 0 !== b.particleColor ? b.particleColor : "#fff",
+          background: void 0 !== b.background ? b.background : "#1a252f",
+          interactive: void 0 !== b.interactive ? b.interactive : !0,
+          velocity: this.setVelocity(b.speed),
+          density: this.j(b.density)
+        }, this.init()
+      }, b.prototype.init = function () {
+        if (this.k = document.createElement("div"), this.i.appendChild(this.k), this.l(this.k, {
+          position: "absolute",
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          "z-index": 1
+        }), /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.background)) this.l(this.k, {
+          background: this.options.background
+        });
+        else {
+          if (!/\.(gif|jpg|jpeg|tiff|png)$/i.test(this.options.background)) return console.error("Please specify a valid background image or hexadecimal color"), !1;
+          this.l(this.k, {
+            background: 'url("' + this.options.background + '") no-repeat center',
+            "background-size": "cover"
+          })
+        }
+        if (!/(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(this.options.particleColor)) return console.error("Please specify a valid particleColor hexadecimal color"), !1;
+        this.canvas = document.createElement("canvas"), this.i.appendChild(this.canvas), this.g = this.canvas.getContext("2d"), this.canvas.width = this.i.size.width, this.canvas.height = this.i.size.height, this.l(this.i, {
+          position: "relative"
+        }), this.l(this.canvas, {
+          "z-index": "20",
+          position: "relative"
+        }), window.addEventListener("resize", function () {
+          return this.i.offsetWidth === this.i.size.width && this.i.offsetHeight === this.i.size.height ? !1 : (this.canvas.width = this.i.size.width = this.i.offsetWidth, this.canvas.height = this.i.size.height = this.i.offsetHeight, clearTimeout(this.m), void (this.m = setTimeout(function () {
+            this.o = [];
+            for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this.o.push(new c(this));
+            this.options.interactive && this.o.push(this.p), requestAnimationFrame(this.update.bind(this))
+          }.bind(this), 500)))
+        }.bind(this)), this.o = [];
+        for (var a = 0; a < this.canvas.width * this.canvas.height / this.options.density; a++) this.o.push(new c(this));
+        this.options.interactive && (this.p = new c(this), this.p.velocity = {
+          x: 0,
+          y: 0
+        }, this.o.push(this.p), this.canvas.addEventListener("mousemove", function (a) {
+          this.p.x = a.clientX - this.canvas.offsetLeft, this.p.y = a.clientY - this.canvas.offsetTop
+        }.bind(this)), this.canvas.addEventListener("mouseup", function (a) {
+          this.p.velocity = {
+            x: (Math.random() - .5) * this.options.velocity,
+            y: (Math.random() - .5) * this.options.velocity
+          }, this.p = new c(this), this.p.velocity = {
+            x: 0,
+            y: 0
+          }, this.o.push(this.p)
+        }.bind(this))), requestAnimationFrame(this.update.bind(this))
+      }, b.prototype.update = function () {
+        this.g.clearRect(0, 0, this.canvas.width, this.canvas.height), this.g.globalAlpha = 1;
+        for (var a = 0; a < this.o.length; a++) {
+          this.o[a].update(), this.o[a].h();
+          for (var b = this.o.length - 1; b > a; b--) {
+            var c = Math.sqrt(Math.pow(this.o[a].x - this.o[b].x, 2) + Math.pow(this.o[a].y - this.o[b].y, 2));
+            c > 120 || (this.g.beginPath(), this.g.strokeStyle = this.options.particleColor, this.g.globalAlpha = (120 - c) / 120, this.g.lineWidth = .7, this.g.moveTo(this.o[a].x, this.o[a].y), this.g.lineTo(this.o[b].x, this.o[b].y), this.g.stroke())
+          }
+        }
+        0 !== this.options.velocity && requestAnimationFrame(this.update.bind(this))
+      }, b.prototype.setVelocity = function (a) {
+        return "fast" === a ? 1 : "slow" === a ? .33 : "none" === a ? 0 : .66
+      }, b.prototype.j = function (a) {
+        return "high" === a ? 5e3 : "low" === a ? 2e4 : isNaN(parseInt(a, 10)) ? 1e4 : a
+      }, b.prototype.l = function (a, b) {
+        for (var c in b) a.style[c] = b[c]
+      }, b
+    });
+    // Initialisation
+  
+    var canvasDiv = document.getElementById('particle-canvas');
+    var options = {
+      particleColor: '#fff',
+      background: 'assets/img/icon/back2.jpg',
+  
+      interactive: true,
+      speed: 'medium',
+      density: 'high'
+    };
+    var particleCanvas = new ParticleNetwork(canvasDiv, options);
+  
+  
+    document.addEventListener('DOMContentLoaded', function () {
+      var elems = document.querySelectorAll('.collapsible');
+      var instances = M.Collapsible.init(elems, options);
+    });
+  
+    // Or with jQuery
+  
+    $(document).ready(function () {
+      // $('.collapsible').collapsible();
+      $('.collapsible-header').click(function(){
+      var has=  $(this).find('i').hasClass('fa-chevron-down');
+        if(!has){
+          $(this).find('i').addClass('fa-chevron-down');
+          $(this).find('i').removeClass('fa-chevron-right');
+        }
+        else{
+          $(this).find('i').addClass('fa-chevron-right');
+          $(this).find('i').removeClass('fa-chevron-down');
+        }
+      })
+      var obj= {
+            name: '',
+            mail: '',
+            phone:'',
+            subject: '',
+            message: ''
+          }
+     
+      function validateEmail(email) {
+              var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+              return emailReg.test(email);
+          }
+      function validate(){
+      
+          if($('#name').val()==''){
+            alert("Please provide name");
+            $('#name').focus();
+            return false;
+          }
+          else{
+            obj.name= $('#name').val();
+            
+          }
+
+         
+          if($('#mail').val()==''){
+            alert("Please enter email");
+            $('#mail').focus();
+            return false;
+          }
+          else if((!validateEmail($('#mail').val()))){
+                  alert("Please enter valid Email!");
+                 $('#mail').focus();
+                 return false;
+              }
+          else {
+              obj.mail = $('#mail').val();
+          }
+
+          if (($('#phone').val() == "") || $('#phone').val().length != 10) {
+                alert("Enter valid phone number");
+                $('#phone').focus();
+                return false;
+            }
+            else {
+                obj.phone = $('#phone').val();
+            }
+
+            if (($('#message').val() == "") ) {
+                alert("Enter a message");
+                $('#message').focus();
+                return false;
+            }
+            else {
+                obj.message = $('#message').val();
+            
+            }
+            if($('#subject').val()== '-1'){
+              alert('Please select subject');
+              $('#subject').focus();
+              return false;
+            }
+            else{
+              obj.subject = $('#subject').val();
+            
+            }
+            return true;
+      }
+
+      $('#submit').click(function(){
+          
+          if(validate()){
+            console.log(obj);
+            //Ajax Call
+          }
+        });
+     
+    });
+  
+  </script>
+
+</html>
