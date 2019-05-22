@@ -43,224 +43,6 @@
     })();
 </script>
 
-  <style>
-    .f-flex {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      margin: 2rem 0;
-      width: 100%;
-    }
-
-    .f-flex1 {
-
-
-      margin: 10px;
-      height: auto;
-      width: 100%;
-      -webkit-transform: none;
-      -ms-transform: none;
-      transform: none;
-      -webkit-transition: all 400ms ease;
-      transition: all 400ms ease;
-      color: #000;
-      border: 1px solid lightgray;
-      padding: 20px;
-      box-shadow: 0 0 8px rgba(0, 0, 0, .1);
-      border-radius: 5px;
-    }
-
-    .f-flex1:hover {
-      box-shadow: 8px 8px 30px 0 rgba(0, 0, 0, .15);
-      text-decoration: none;
-    }
-
-    .f-flex1:nth-child(2n-1) {
-      justify-self: end;
-    }
-
-    .f-flex1:nth-child(2n) {
-      justify-self: start;
-    }
-
-    .f-f1 {
-      height: 60%;
-      border-bottom: 1px solid grey;
-    }
-
-    .f-flex1 h2 {
-      margin-bottom: 20px;
-    }
-
-    .f-f1 {
-      background-image: url(assets/img/icon/back2.jpg);
-      background-size: cover;
-    }
-
-    .f-f2 {
-      position: relative;
-      z-index: 100;
-      display: block;
-      width: 80%;
-      margin-top: -100px;
-      margin-right: auto;
-      margin-left: auto;
-      padding: 40px;
-      background-color: #fff;
-    }
-    
-    .f-f2 h2 {
-      white-space: nowrap;
-
-    }
-
-    .button.big:hover {
-      color: white !important;
-      background-color: #304269 !important;
-      opacity: 0.8;
-    }
-
-    .contact-h1 {
-      line-height: 60px;
-      color: #304269;
-    }
-
-    .fa-chevron-right, .fa-chevron-down{
-      color: #304269
-    }
-
-    .collapsible {
-      border-top: 2px solid #304269;
-      border-right: 2px solid #304269;
-      border-left: 2px solid #304269;
-      margin: .5rem 0 1rem 0;
-      width: 50%;
-      border-radius: 10px;
-      
-
-    }
-    .co-one{
-      margin-right: 2.5rem;
-    }
-    .collapsible-header {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      cursor: pointer;
-      -webkit-tap-highlight-color: transparent;
-      line-height: 1.5;
-      padding: 1rem;
-      background-color: #fff;
-      border-bottom: 2px solid #304269;
-     
-    justify-content: space-between;
-    align-items: center;
-    }
-
-    .collapsible-body {
-      display: none;
-      border-bottom: 2px solid #304269;
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      padding: 2rem;
-      border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: rgb(247, 252, 255);
-    }
-    .explore li{
-      margin-bottom: 1rem;
-    }
-    .contact-area h4{
-      color: #304269;
-    }
-    .header-area{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-
-    }
-    .header-2{
-      padding-right: 2rem;
-      cursor: pointer;
-
-    }
-    .header-2 .fa{
-      font-size: 25px;
-      color: white;
-      
-    }
-    .header-2:hover .fa{
-      color: #304269 
-    }
-    @media(max-width: 1200px) {
-      .f-flex1 {
-        width: 100%;
-      }
-
-      .f-flex {
-        grid-template-columns: 1fr;
-      }
-
-      .f-flex1:nth-child(2n-1),
-      .f-flex1:nth-child(2n) {
-        justify-self: center;
-      }
-
-    }
-    @media(max-width: 911px){
-      .m-col{
-        flex-direction: column!important;
-        height:auto!important;
-      }
-      .collapsible{
-        width: 100%;
-    
-      }
-      .co-one{
-      margin-right: 0rem;
-    }
-    }
-
-
-
-    #contact{
-    padding:10px 0 10px;
-  }
-
-  .contact-text{
-    margin:45px auto;
-  }
-
-  .mail-message-area{
-    width:100%;
-    padding:0 15px;
-  }
-
-  .mail-message{
-    width: 100%;
-    background:rgba(255,255,255, 0.8) !important;
-    -webkit-transition: all 0.7s;
-    -moz-transition: all 0.7s;
-    transition: all 0.7s;
-    margin:0 auto;
-    border-radius: 0;
-  }
-
-  .not-visible-message{
-    height:0px;
-    opacity: 0;
-  }
-
-  .visible-message{
-    height:auto;
-    opacity: 1;
-    margin:25px auto 0;
-  }
- 
-.dropdown-menu p{
-  cursor: pointer;
-}
-  </style>
   <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
@@ -281,7 +63,8 @@
           <div class="menu-area">
             <div class="col-md-3 col-sm-12 col-xs-12">
               <div class="logo">
-                <a href="index.html"><img src="assets/img/icon/logowhite.png" alt="Smart Sight"></a>
+                <a href="index.html" class="logofull"><img src="assets/img/icon/logowhite.png" alt="Smart Sight"></a>
+                <a href="index.html" class="logohalf"><img src="assets/img/icon/logohalf.png" alt="Smart Sight"></a>
               </div>
             </div>
             <div class="col-md-9 hidden-xs hidden-sm">
@@ -299,9 +82,9 @@
                         <a class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" >More <span class="caret"></span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu1" style="padding: 10px">
                           <div>
-                          <p>Support </p>
-                         <p ><a href="#faq" style="padding: 0px; color:#888">FAQ's</a></p>
-                          <p >Chat</p>
+                        <p><a href="#home" >Support</a> </p>
+                         <p ><a href="#faq">FAQ's</a></p>
+                          <p ><a href="#home" >Chat</a></p>
                         </div>
                         </div>
                       </div></li>
@@ -318,8 +101,7 @@
       </div>
       <div class="header-2" type="button" data-toggle="modal" data-target="#myModal" title="contact">
       
-              <i class="fa fa-envelope" ></i>
-      
+            <p>Schedule a demo </p>
        </div>
     </div>
   </header>
@@ -330,8 +112,42 @@
     <div class="" style="width: 100%">
       <div class="item item1">
         <div id="particle-canvas" style="z-index: 1"></div>
-        <div class="f-row f-1" style="position: absolute; z-index: 21">
+        <div class="f-row f-1 " style="position: absolute; z-index: 21 ; flex-direction: column">
           <h1>Configurable AI for computer vision</h1>
+          <!-- <button id="request-callback">Request a call back <span><i class="fa fa-chevron-right"></i></span></button>
+          <div class="wow animated  callback" data-wow-delay=".5s" id="callback">
+            <input class="form-control" placeholder="Name*" type="text" >
+            <input class="form-control" placeholder="Name*" type="text" >
+          </div> -->
+
+          <ul class="collapsible callback-button" >
+              <li>
+                <div class="collapsible-header" >
+                  <p>Request a Callback</p>
+                  <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="collapsible-body no-border">
+                  <div>
+                    <label>Please provide your mobile number and we will contact you shortly.
+                      </label>
+                        <form class="contact-form">
+                    <input placeholder="name" class="form-control ">
+                    <input placeholder="phone" class="form-control">
+                    <button class="btn btn-primary">Request a call Back</button>
+                  </form>
+                    <p class="note">
+                        You can also contact us by calling<br>
+                        <a  href="tel:+919811323391" ><u>+91 9133100036</u></a>
+                        or
+                        <a href="mailto:sales@smartsight.ai" ><u>Emailing</u></a>
+                        us about your enquiry.
+                    </p>
+                  </div>
+
+                </div>
+              </li>
+              </ul>
+
         </div>
       </div>
       <!-- <div class="item item2">
@@ -678,7 +494,7 @@
             
           </div>
 
-          <div  class="col-md-3 col-sm-3 col-xs-12 text-right">
+          <div  class="col-md-3 col-sm-3 col-xs-12" class="explore-right">
               <h4 class="" style="margin-bottom: 2rem">Explore</h4>
               <div>
                   <ul class="explore">
@@ -897,7 +713,6 @@
     var options = {
       particleColor: '#fff',
       background: 'assets/img/icon/back2.jpg',
-  
       interactive: true,
       speed: 'medium',
       density: 'high'
@@ -993,7 +808,10 @@
             }
             return true;
       }
-
+      
+      $('#request-callback').click(function(){
+          $('#callback').toggle();
+      })
       $('#submit').click(function(){
           
           if(validate()){
