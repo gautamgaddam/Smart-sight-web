@@ -75,6 +75,7 @@
     }
     $(window).on("load", function () {
         smoothScrolling($(".main-menu > nav > ul > li > a[href^='#']"), 70);
+        smoothScrolling($(".dropdown-menu > div >  p > a"), 70);
     });
     $('.nav-menu > ul').slicknav({
         'prependTo': '.mobile_menu'
