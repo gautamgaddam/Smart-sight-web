@@ -128,12 +128,12 @@
                 </div>
                 <div class="collapsible-body no-border">
                   <div>
-                    <label>Please provide your mobile number and we will contact you shortly.
+                    <label id="label">Please provide your mobile number and we will contact you shortly.
                       </label>
                         <form class="contact-form">
-                    <input placeholder="name" class="form-control ">
-                    <input placeholder="phone" class="form-control">
-                    <button class="btn btn-primary">Request a call Back</button>
+                    <input placeholder="name" class="form-control " type="text"  id="r-name" name="name">
+                    <input placeholder="phone" class="form-control" type="number" id="r-phone" name="phone">
+                    <button class="btn btn-primary" id="r-button">Request a call Back</button>
                   </form>
                     <p class="note">
                         You can also contact us by calling<br>
@@ -551,7 +551,7 @@
                               <input type="text" name="name" id="name" required="required" class="form" placeholder="Your Name" />
                               <!-- Email -->
                               <input type="email" name="mail" id="mail" required="required" class="form" placeholder="Your Email" />
-                              <input type="numnber" name="phone" id="phone" required="required" class="form" placeholder="Your Phone" />
+                              <input type="number" name="phone" id="phone" required="required" class="form" placeholder="Your Phone" />
                               <!-- Subject -->
                               <!-- <input type="text" name="subject" id="subject" required="required" class="form" placeholder="Subject" /> -->
                               <select name="subject" id="subject" required="required" class="form-control" placeholder="Subject" >
@@ -819,6 +819,30 @@
             //Ajax Call
           }
         });
+
+        $('#r-button').click(function(e){
+          e.preventDefault();
+          var obj1={
+
+          };
+          if($('#r-name').val()==''){
+            alert('Please enter name');
+          }
+          else if($('#r-phone').val()==''){
+            alert('Please enter phone number');
+          }
+          else{
+          obj1= {name: $('#r-name').val(), phone: $('#r-phone').val()};
+          console.log(obj1);
+          $('#label').css('color', 'green');
+          $('#label').text("Thanks for filling we will soon be in touch with you");
+          reset();
+          }
+        })
+        function reset(){
+          $('#r-name').val('');
+          $('#r-phone').val('');
+        }
      
     });
   
